@@ -1,0 +1,56 @@
+<div class="limiter">
+    <div class="container-login100">
+        <div class="wrap-login100">
+            <form class="login100-form validate-form" style="position: relative;">
+                <div class="form-group" style="position: absolute;top: 50px;right: 50px;">
+                    <select class="form-control" ng-model="mainCtrl.translationLanguage" ng-change="mainCtrl.changeLanguage()" ng-options="lang.name for lang in mainCtrl.names">
+                    </select>
+                </div>
+                <span class="login100-form-title p-b-34">
+                    {{'Welcome' | translate }}
+                </span>
+
+                <div class="wrap-input100 rs1-wrap-input100 validate-input m-b-20" data-validate="Type user name">
+                    <input id="first-name" class="input100" type="text" name="username" placeholder="{{'User' | translate }}">
+                    <span class="focus-input100"></span>
+                </div>
+                <div class="wrap-input100 rs2-wrap-input100 validate-input m-b-20" data-validate="Type password">
+                    <input class="input100" type="password" name="pass" placeholder="{{'Password' | translate }}">
+                    <span class="focus-input100"></span>
+                </div>
+                <div class="container-login100-form-btn">
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="rememberMe">{{'Remember' | translate }}
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-login100-form-btn">
+                    <button class="login100-form-btn" ng-click="loginCtrl.login()">
+                        {{'SignIn' | translate }}
+                    </button>
+                </div>
+
+                <div class="w-full text-center p-t-27 p-b-239">
+                    <span class="txt1">
+                        {{'Forgot' | translate }}
+                    </span>
+
+                    <a href="#" class="txt2">
+                        {{'ForgotUserPassword' | translate }}
+                    </a>
+                </div>
+
+                <div class="w-full text-center">
+                    <a href="#" class="txt3">
+                        {{'SignUp' | translate }}
+                    </a>
+                </div>
+            </form>
+
+            <div class="login100-more" style="background-image: url('images/bg-01.jpg');"></div>
+        </div>
+    </div>
+</div>
